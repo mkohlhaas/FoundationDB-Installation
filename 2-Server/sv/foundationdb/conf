@@ -1,0 +1,4 @@
+NAME=fdbmonitor
+FDBMONITOR=/usr/lib/foundationdb/$NAME
+PIDFILE=/var/run/$NAME.pid
+CONFFILE=/etc/foundationdb/foundationdb.conf

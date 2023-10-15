@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[ -r conf ] && . ./conf
+
+ps -p "$PIDFILE" > /dev/null
