@@ -2,8 +2,8 @@
 
 [ -r ../fdb.conf ] && . ../fdb.conf
 
-wget "https://github.com/apple/foundationdb/releases/download/$FOUNDATIONDBVERSION/foundationdb-clients_${FOUNDATIONDBVERSION}-${SUBVERSION}_amd64.deb"
-ark -b "foundationdb-clients_${FOUNDATIONDBVERSION}-${SUBVERSION}_amd64.deb"
+wget "https://github.com/apple/foundationdb/releases/download/$FOUNDATIONDBVERSION/$DEBCLIENT.deb"
+ark -b "$DEBCLIENT"
 mkdir destdir
 ark -b -o destdir data.tar.gz
 rsync -r destdir/ /

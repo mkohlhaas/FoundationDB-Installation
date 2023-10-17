@@ -8,8 +8,10 @@ git clone https://github.com/mkohlhaas/FoundationDB-Installation.git /tmp/Founda
 cd /tmp/FoundationDB-Installation`
 ```
 
-#### Set FoundationDB version and subversion in `fdb.conf`, e.g.
+#### Set FoundationDB version, subversion and architecture (amd64/x86_64) in `fdb.conf`, e.g.
 ```
+ARCHITECTURE=amd64
+# ARCHITECTURE=x86_64
 FOUNDATIONDBVERSION=7.3.19
 SUBVERSION=1
 ```

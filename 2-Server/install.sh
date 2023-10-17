@@ -2,8 +2,8 @@
 
 [ -r ../fdb.conf ] && . ../fdb.conf
 
-wget "https://github.com/apple/foundationdb/releases/download/$FOUNDATIONDBVERSION/foundationdb-server_${FOUNDATIONDBVERSION}-${SUBVERSION}_amd64.deb"
-ark -b "foundationdb-server_${FOUNDATIONDBVERSION}-${SUBVERSION}_amd64.deb"
+wget "https://github.com/apple/foundationdb/releases/download/$FOUNDATIONDBVERSION/$DEBSERVER.deb"
+ark -b "$DEBSERVER"
 mkdir destdir
 ark -b -o destdir data.tar.gz
 rm -rf destdir/etc/init.d/
