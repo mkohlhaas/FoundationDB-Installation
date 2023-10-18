@@ -2,7 +2,7 @@
 
 [ -r ../fdb.conf ] && . ../fdb.conf
 
-wget "https://github.com/apple/foundationdb/releases/download/$FOUNDATIONDBVERSION/$DEBSERVER.deb"
+wget "https://github.com/apple/foundationdb/releases/download/$FOUNDATIONDBVERSION/$DEBSERVER"
 ark -b "$DEBSERVER"
 mkdir destdir
 ark -b -o destdir data.tar.gz

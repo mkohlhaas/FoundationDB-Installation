@@ -2,4 +2,6 @@
 
 [ -r conf ] && . ./conf
 
-ps -p "$PIDFILE" > /dev/null
+# ps -p "$PIDFILE" > /dev/null
+
+pidof fdbmonitor > /dev/null
